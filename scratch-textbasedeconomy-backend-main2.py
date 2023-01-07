@@ -1,3 +1,5 @@
+#ONLY WORKS IN REPLIT
+
 import os
 from replit import db
 import scratchattach as scratch3
@@ -10,6 +12,31 @@ import jsonpickle
 
 #Thread(target=savenload)
 #jsonpickle.decode(file)
+
+#How fullData looks initally:
+#fullData = {data:{}, "gameData": {"lottery": {"lotteryList": [], "lastLottery": 1673123540.6755528, "lotteryAmount": 0}, "lastShopRefresh": 1673123540.6759982, "lastStockRefresh": 1673123540.6760097, shop: {
+#      "banknote": {"buyPrice": 10000, "sellPrice": 9000, "useable": "True", "expireTime": 0, "function": "bankSpace",
+#                   "maxNum": float('inf'), "description": "Increases bank space.", 'stock': 1000, 'demand': {'hour1': 0, 'hour2': 0}},
+#      "landmine": {"buyPrice": 30000, "sellPrice": 25000, "useable": "True", "expireTime": 86400,
+#                   "function": "walletProtection", "maxNum": 3, "description": "Protect your wallet. Blows up a enemy.", 'stock': 1000, 'demand': {'hour1': 0, 'hour2': 0}},
+#      "paperclip": {"buyPrice": 15000, "sellPrice": 5000, "useable": "True", "expireTime": 18000, "function": "robItem",
+#                    "maxNum": 5, "description": "Pick the lock on a padlock.", 'stock': 1000, 'demand': {'hour1': 0, 'hour2': 0}},
+#      "padlock": {"buyPrice": 25000, "sellPrice": 15000, "useable": "True", "expireTime": 86400,
+#                  "function": "walletProtection", "maxNum": 3, "description": "Protect your wallet by adding a padlock.", 'stock': 1000, 'demand': {'hour1': 0, 'hour2': 0}},
+#      "dummy": {"buyPrice": 20000, "sellPrice": 14000, "useable": "True", "expireTime": 18000, "function": "robItem",
+#                "maxNum": 5, "description": "Decreases the chance of you getting blown up by a landmine.", 'stock': 1000, 'demand': {'hour1': 0, 'hour2': 0}},
+#      "lotteryticket": {"buyPrice": 10000, "sellPrice": 1000, "useable": "False", "function": "lottery",
+#                        "maxNum": float('inf'), "description": "Participate in the hourly lottery!", 'stock': 1000, 'demand': {'hour1': 0, 'hour2': 0}},
+#      "soccerball": {"buyPrice": 'not buyable', "sellPrice": '1000000', "useable": "False", "function": "event", "maxNum": 1, "description": "Thanks for playing in the game's 'kick-off' (alpha)", 'stock': 1000, 'demand': {'hour1': 0, 'hour2': 0}},
+#      "guard": {"buyPrice": 50000, "sellPrice": 30000, "useable": "True", "expireTime": 86400,
+#                   "function": "walletProtection", "maxNum": 3, "description": "Protect your wallet by posting a guard outside.", 'stock': 1000, 'demand': {'hour1': 0, 'hour2': 0}},
+#      "katana": {"buyPrice": 35000, "sellPrice": 10000, "useable": "True", "expireTime": 18000, "function": "robItem",
+#                    "maxNum": 4, "description": "Defeat a guard posted outside.", 'stock': 1000, 'demand': {'hour1': 0, 'hour2': 0}},
+#      "fidgetspinner": {"buyPrice": 25000, "sellPrice": 10000, "useable": "True", "expireTime": 18000, "function": "luck",
+#                    "maxNum": 5, "description": "Increases your luck with gambles and begging while it spins.", 'stock': 1000, 'demand': {'hour1': 0, 'hour2': 0}},
+#      "suit": {"buyPrice": 10000, "sellPrice": 5000, "useable": "True", "expireTime": 18000, "function": "workMul",
+#                    "maxNum": 5, "description": "Makes you look professional when you work. Increases amount earned from working by x2", 'stock': 1000, 'demand': {'hour1': 0, 'hour2': 0}}
+#          }}}}
 
 try:
   def main():
